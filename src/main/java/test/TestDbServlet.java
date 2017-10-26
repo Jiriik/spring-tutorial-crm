@@ -1,4 +1,4 @@
-package cz.vlasimsky.tutorials.spring.crm.serverTests;
+package test;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

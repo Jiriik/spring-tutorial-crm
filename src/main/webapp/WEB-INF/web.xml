@@ -26,7 +26,7 @@
 
     <servlet>
         <servlet-name>TestDbServlet</servlet-name>
-        <servlet-class>cz.vlasimsky.tutorials.spring.crm.serverTests.TestDbServlet</servlet-class>
+        <servlet-class>test.TestDbServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TestDbServlet</servlet-name>

@@ -1,4 +1,4 @@
-package cz.vlasimsky.tutorials.spring.crm.entity.cz.vlasimsky.tutorials.spring.crm.controller;
+package controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
