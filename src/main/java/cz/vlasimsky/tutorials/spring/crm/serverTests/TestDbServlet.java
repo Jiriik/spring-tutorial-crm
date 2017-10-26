@@ -1,4 +1,4 @@
-package cz.vlasimsky.tutorials.spring.crm;
+package cz.vlasimsky.tutorials.spring.crm.serverTests;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -41,7 +41,6 @@ public class TestDbServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             throw new ServletException();
-        } finally {
         }
 
     }
