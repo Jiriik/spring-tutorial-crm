@@ -13,6 +13,7 @@ import java.util.List;
 @RequestMapping("/customer")
 public class CustomerController {
 
+    public static final String LIST_VIEW = "list-customers";
     @Autowired
     private CustomerService customerService;
 
@@ -25,7 +26,7 @@ public class CustomerController {
         // add the customer to the model
         model.addAttribute("customers", customers);
 
-        return "list-customers";
+        return LIST_VIEW;
     }
 
     @GetMapping("/showFormForAdd")
@@ -48,5 +49,11 @@ public class CustomerController {
         model.addAttribute("customer", customer);
 
         return "customer-form";
+    }
+
+    @GetMapping("/delete")
+    public String deleteCustomer(@ModelAttribute("customerId") int id) {
+        customerService.deleteCustomer(id);
+        return "redirect:/customer/list";
     }
 }
